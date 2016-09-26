@@ -56,9 +56,10 @@ public class MainThread extends Thread {
         int[] curGLVersion = new int[2];
         mEGL.eglInitialize(mGLDisplay, curGLVersion);
 
-        int[] mConfigSpec = { EGL10.EGL_RED_SIZE, 5,
-                EGL10.EGL_GREEN_SIZE, 6,
-                EGL10.EGL_BLUE_SIZE, 5,
+        int[] mConfigSpec = { EGL10.EGL_RED_SIZE, 8,
+                EGL10.EGL_GREEN_SIZE, 8,
+                EGL10.EGL_BLUE_SIZE, 8,
+                EGL10.EGL_ALPHA_SIZE, 8,
                 EGL10.EGL_DEPTH_SIZE, 16,
                 EGL10.EGL_NONE };
         EGLConfig[] configs = new EGLConfig[1];

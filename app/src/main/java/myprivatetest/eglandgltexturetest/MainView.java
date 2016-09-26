@@ -162,6 +162,7 @@ public class MainView extends SurfaceView implements SurfaceHolder.Callback{
         if (height > reqHeight || width > reqWidth) {
 
             final int halfHeight = height / 2;
+            
             final int halfWidth = width / 2;
 
             // Calculate the largest inSampleSize value that is a power of 2 and keeps both
